@@ -1,0 +1,8 @@
+@import "./vars.scss";
+.wrap{
+    display: flex;
+    padding: 0 $padding;
+}
+.nav-menu-item{
+    color: $grey
+}
