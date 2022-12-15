@@ -1,8 +1,23 @@
+body, html {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 .wrap {
   display: flex;
+  flex-direction: column;
   padding: 0 2.25rem;
 }
 
 .nav-menu-item {
   color: #707070;
+}
+
+.system-button {
+  background-color: #1FC2BB;
+  border-radius: 30px;
+  border: none;
+  color: #FFF;
+  padding: 0.5rem 3rem;
+  font-size: 1rem;
 }/*# sourceMappingURL=style.css.map */

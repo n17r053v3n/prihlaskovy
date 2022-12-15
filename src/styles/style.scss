@@ -1,8 +1,21 @@
 @import "./vars.scss";
+body, html{
+    overflow-x: hidden;
+    width: 100vw;
+}
 .wrap{
     display: flex;
+    flex-direction: column;
     padding: 0 $padding;
 }
 .nav-menu-item{
     color: $grey
+}
+.system-button{
+    background-color: $systemDark;
+    border-radius: 30px;
+    border: none;
+    color: #FFF;
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
 }

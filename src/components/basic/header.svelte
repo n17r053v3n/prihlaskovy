@@ -1,5 +1,5 @@
 <script>
-    import ModalMenu from "./modalMenu.svelte";
+    import ModalMenu from "../modalMenu.svelte";
     let active = false;
 </script>
 
@@ -26,18 +26,22 @@
     </div>
 </div>
 {#if active}
-    <ModalMenu/>
+    <ModalMenu on:closeMenu={() => active = !active}/>
 {/if}
 
 <style lang="scss">
-    @import "../styles/hamburgers.css";
-    @import "../styles/vars.scss";
+    @import "../../styles/hamburgers.css";
+    @import "../../styles/vars.scss";
     .nav-wrap {
         align-items: center;
         width: calc(100% - $padding * 2);
         justify-content: space-between;
         // padding: 1rem $padding;
         height: 100px;
+        flex-direction: row;
+        position: fixed;
+		z-index: 999;
+        background-color: white;
     }
     .nav-img {
         img {
