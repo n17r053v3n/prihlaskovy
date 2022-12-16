@@ -31,14 +31,3 @@ img{
 .nav-menu-item{
     color: $grey
 }
-.system-button{
-    background-color: $systemDark;
-    border-radius: 30px;
-    border: none;
-    color: #FFF;
-    padding: 0.5rem 3rem;
-    font-size: 1rem;
-    &:hover{
-        cursor: pointer;
-    }
-}

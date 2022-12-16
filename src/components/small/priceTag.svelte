@@ -1,4 +1,6 @@
 <script lang="ts">
+    import SystemButton from "./systemButton.svelte";
+
     export let name: string;
     export let img: string;
     export let price: number;
@@ -21,12 +23,13 @@
                     <p class="price-tag-p">{bullet}</p>
                 </div>
             {/each}
-            <button class="system-button">MÁM ZÁJEM</button>
+            <!-- <button class="system-button">MÁM ZÁJEM</button> -->
+            <SystemButton link="#" buttonText="MÁM ZÁJEM" size="small"/>
         </div>
     </div>
 </div>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../../styles/vars.scss";
     .price-tag-wrap {
         border-radius: 33px;
@@ -102,9 +105,5 @@
         border-bottom: 3px dashed $systemDarkest;
         width: 70%;
         padding-bottom: 0.25rem;
-    }
-    .system-button {
-        font-size: 0.75rem;
-        padding: 0.25rem 1.25rem;
     }
 </style>

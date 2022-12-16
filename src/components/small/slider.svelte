@@ -1,68 +1,16 @@
 <script lang="ts">
-    import { onMount } from "svelte";
     let sliderValue = 0;
-    // not important
-    // onMount(() => {
-    //     const slideValue = document.getElementById("span");
-    //     const inputSlider = document.getElementById("input");
-    //     if (inputSlider != null && slideValue != null) {
-    //         inputSlider.oninput = () => {
-    //             let value = (<HTMLInputElement>inputSlider).value;
-    //             slideValue.textContent = value;
-    //             slideValue.style.left = parseInt(value) / 2 + "%";
-    //             slideValue.classList.add("show");
-    //             console.log(value);
-    //         };
-    //         inputSlider.onblur = () => {
-    //             slideValue.classList.remove("show");
-    //         };
-    //     }
-    // });
-    // $: console.log(sliderValue)
 </script>
 
 <div class="slider-wrap">
     <div class="slider-numbers">
-        <!-- classic foreach to generate numbers (important) -->
         {#each { length: 11 } as _, index}
             <!-- svelte-ignore a11y-click-events-have-key-events -->
             <p on:click={() => (sliderValue = index)} class="slider-number {sliderValue == index ? "active" : ""}">
                 {index}
             </p>
         {/each}
-
-        <!-- <p class="slider-number">
-            1
-        </p>
-        <p class="slider-number">
-            2
-        </p>
-        <p class="slider-number">
-            3
-        </p>
-        <p class="slider-number">
-            4
-        </p>
-        <p class="slider-number">
-            5
-        </p>
-        <p class="slider-number">
-            6
-        </p>
-        <p class="slider-number">
-            7
-        </p>
-        <p class="slider-number">
-            8
-        </p>
-        <p class="slider-number">
-            9
-        </p>
-        <p class="slider-number">
-            10
-        </p> -->
     </div>
-    <!-- important -->
     <div class="range">
         <div class="sliderValue">
             <span id="span">100</span>
@@ -88,16 +36,14 @@
     </div>
 </div>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../../styles/vars.scss";
-    // $systemLight: #02CBC6;
     .slider-wrap {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
 
-        // important
         .slider-numbers {
             display: flex;
             flex-direction: row;
@@ -157,9 +103,9 @@
             transform-origin: bottom;
             transition: transform 0.3s ease-in-out;
         }
-        .sliderValue span.show {
-            transform: translateX(-70%) scale(1);
-        }
+        // .sliderValue span.show {
+        //     transform: translateX(-70%) scale(1);
+        // }
         .sliderValue span:after {
             position: absolute;
             content: "";
@@ -182,18 +128,18 @@
             height: 100%;
             position: relative;
         }
-        .field .value {
-            position: absolute;
-            font-size: 18px;
-            color: $systemLight;
-            font-weight: 600;
-        }
-        .field .value.left {
-            left: -22px;
-        }
-        .field .value.right {
-            right: -43px;
-        }
+        // .field .value {
+        //     position: absolute;
+        //     font-size: 18px;
+        //     color: $systemLight;
+        //     font-weight: 600;
+        // }
+        // .field .value.left {
+        //     left: -22px;
+        // }
+        // .field .value.right {
+        //     right: -43px;
+        // }
         .range input {
             -webkit-appearance: none;
             width: 100%;

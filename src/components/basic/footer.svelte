@@ -24,7 +24,7 @@
     </p>
 </footer>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../../styles/vars.scss";
     .footer-wrap {
         padding: 2rem $padding;

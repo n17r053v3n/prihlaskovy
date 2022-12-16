@@ -15,7 +15,7 @@
     </div>
 </div>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../styles/vars.scss";
     .contact-wrap {
         margin-bottom: 3rem;

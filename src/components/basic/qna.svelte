@@ -41,7 +41,7 @@
     <!-- <div class="space" /> -->
 </div>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../../styles/vars.scss";
     // .space {
     //     height: 1000px;

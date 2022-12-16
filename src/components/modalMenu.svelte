@@ -13,7 +13,7 @@
 	<!-- <div class="space" /> -->
 </div>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	@import "../styles/vars.scss";
 	.modal {
 		height: 100vh;
@@ -35,7 +35,7 @@
 			text-decoration: none;
 			transition: 0.25s ease;
 			&:hover {
-				transform: scale(1.3);
+				// transform: scale(1.3);
 				color: $systemDark;
 			}
 		}

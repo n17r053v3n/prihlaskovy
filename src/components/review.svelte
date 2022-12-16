@@ -1,5 +1,6 @@
 <script lang="ts">
     import Slider from "./small/slider.svelte";
+    import SystemButton from "./small/systemButton.svelte";
 </script>
 <div class="wrap review-wrap">
     <p class="slider-heading">
@@ -10,9 +11,7 @@
         <input type="text" placeholder="Jméno" />
         <input type="text" placeholder="Příjmení" />
         <textarea rows="10" placeholder="Prostor pro zpětnou vazbu" class="text-area"/>
-        <button class="system-button">
-            Odeslat folmulář
-        </button>
+        <SystemButton link="/send" buttonText="Odeslat folmulář"/>
     </div>
 </div>
 

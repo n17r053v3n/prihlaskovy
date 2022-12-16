@@ -29,7 +29,7 @@
     <ModalMenu on:closeMenu={() => active = !active}/>
 {/if}
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../../styles/hamburgers.css";
     @import "../../styles/vars.scss";
     .nav-wrap {

@@ -13,7 +13,7 @@
 </div>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../styles/vars.scss";
     #o-systemu{
         scroll-margin-top: 100px;

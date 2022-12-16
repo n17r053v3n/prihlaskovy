@@ -25,7 +25,7 @@
     </div>
 </div>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../styles/vars.scss";
     #cenik {
         scroll-margin-top: 100px;

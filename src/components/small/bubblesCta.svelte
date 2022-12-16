@@ -2,8 +2,8 @@
     export let bigText: string;
     export let smallText: string;
     export let img: string;
-    export let imgMarginTop: string; // in rems
-    export let imgMarginRight: string; // in rems
+    export let imgMarginTop: string = "0"; // in rems
+    export let imgMarginRight: string = "0"; // in rems
 </script>
 
 <div class="review-cta">
@@ -14,7 +14,7 @@
     <img src="/img/{img}.png" alt={img} style="margin-top: {parseInt(imgMarginTop)}rem; margin-right: {parseInt(imgMarginRight)}rem;"/>
 </div>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../../styles/vars.scss";
 
     .review-cta {
@@ -40,6 +40,7 @@
         .review-cta-p-small {
             font-size: 0.5rem;
             max-width: 200px;
+            margin-top: 0.5rem;
         }
         img {
             align-self: flex-end;
