@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   overflow-x: hidden;
   width: 100vw;
 }
@@ -35,14 +36,26 @@ img {
   color: #707070;
 }
 
-.system-button {
-  background-color: #1FC2BB;
-  border-radius: 30px;
-  border: none;
-  color: #FFF;
-  padding: 0.5rem 3rem;
+.section-heading {
+  font-size: 1.25rem;
+}
+
+.text-small {
+  font-size: 0.5rem;
+}
+
+.text {
   font-size: 1rem;
 }
-.system-button:hover {
-  cursor: pointer;
+
+.text-big {
+  font-size: 1.5rem;
+}
+
+.text-large {
+  font-size: 1.75rem;
+}
+
+.text-super-large {
+  font-size: 2.25rem;
 }/*# sourceMappingURL=style.css.map */

@@ -7,8 +7,8 @@
 </script>
 
 <div class="review-cta">
-    <p class="review-cta-p">{bigText}</p>
-    <p class="review-cta-p-small">
+    <p class="text-big">{bigText}</p>
+    <p class="text-small">
         {smallText}
     </p>
     <img src="/img/{img}.png" alt={img} style="margin-top: {parseInt(imgMarginTop)}rem; margin-right: {parseInt(imgMarginRight)}rem;"/>
@@ -32,13 +32,11 @@
             margin-left: 2rem;
             
         }
-        .review-cta-p {
-            font-size: 1.5rem;
+        .text-big {
             margin-top: 3.5rem;
             max-width: 240px;
         }
-        .review-cta-p-small {
-            font-size: 0.5rem;
+        .text-small {
             max-width: 200px;
             margin-top: 0.5rem;
         }

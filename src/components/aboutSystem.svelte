@@ -6,8 +6,8 @@
     {#each aboutSystem as data}
     <div class="system-single">
         <img src="/img/about-system/{data[0]}.svg" alt="{data[0]}" />
-        <h6 class="system-single-h6">{data[1]}</h6>
-        <p class="system-single-p">{data[2]}<span>{data[3]}</span>{data[4]}</p>
+        <h6 class="section-heading">{data[1]}</h6>
+        <p class="text">{data[2]}<span>{data[3]}</span>{data[4]}</p>
     </div>
     {/each}
 </div>
@@ -30,12 +30,12 @@
         &> img{
             width: 2.75rem;
         }
-        .system-single-h6{
+        .section-heading{
             text-align: center;
             color: $systemLight;
             width: 50%;
         }
-        .system-single-p{
+        .text{
             text-align: center;
             &> span{
                 font-weight: bold;

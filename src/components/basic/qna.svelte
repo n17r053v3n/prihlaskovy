@@ -15,7 +15,7 @@
 </script>
 
 <div class="wrap qna-wrap">
-    <h6 class="qna-h6">Časté otázky</h6>
+    <h6 class="section-heading">Časté otázky</h6>
     {#each questions as question, index}
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div class="single-qna" on:click={() => visibility(index)}>
@@ -29,7 +29,7 @@
             </div>
             {#if visibles.includes(index)}
                 <div
-                    class="single-qna-content"
+                    class="text"
                     in:slide={{ duration: 200 }}
                     out:slide={{ duration: 200 }}
                 >
@@ -76,9 +76,8 @@
                 transition: 0.25s ease;
             }
         }
-        .single-qna-content {
+        .text {
             margin: 1rem 0;
-            font-size: 1rem;
         }
     }
     .rotate {

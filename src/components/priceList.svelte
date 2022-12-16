@@ -5,9 +5,9 @@
 
 <div class="wrap price-list-wrap" id="cenik">
     <div class="price-list-top">
-        <p class="price-list-p">Vyberte si plán vhodný pro Vaši firmu</p>
-        <h4 class="price-list-h4">Ceník našich systémů</h4>
-        <p class="price-list-p-small">
+        <p class="text">Vyberte si plán vhodný pro Vaši firmu</p>
+        <h4 class="text-big">Ceník našich systémů</h4>
+        <p class="text-small">
             Cenové plány podle Vašich potřeb. Vyberte si ten správny pro Vás.
         </p>
     </div>
@@ -35,18 +35,15 @@
         flex-direction: column;
         gap: 0.25rem;
     }
-    .price-list-p {
+    .text {
         text-align: center;
-        font-size: 1rem;
     }
-    .price-list-h4 {
+    .text-big {
         text-align: center;
-        font-size: 1.5rem;
         color: $systemLight;
     }
-    .price-list-p-small {
+    .text-small {
         text-align: center;
-        font-size: 0.5rem;
     }
     .price-list-tags {
         //vnejsi komponenta

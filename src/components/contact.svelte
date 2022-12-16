@@ -1,7 +1,7 @@
 <div class="wrap contact-wrap">
-    <h4 class="contact-h4">Kontakt</h4>
-    <p class="contact-p">Tomáš Otruba</p>
-    <p class="contact-p">IČ: 704 62 810</p>
+    <h4 class="text-large">Kontakt</h4>
+    <p class="text">Tomáš Otruba</p>
+    <p class="text">IČ: 704 62 810</p>
     <div class="contacts">
         <a href="mailto:info@prihlaskovysystem.cz"
             ><img
@@ -19,15 +19,13 @@
     @import "../styles/vars.scss";
     .contact-wrap {
         margin-bottom: 3rem;
-        .contact-h4 {
-            font-size: 1.5rem;
+        .text-large {
             text-align: center;
             color: $systemLight;
             margin-bottom: 1rem;
         }
-        .contact-p {
+        .text {
             text-align: center;
-            font-size: 1.25rem;
         }
         .contacts{
             margin-top: 1rem;

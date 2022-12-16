@@ -1,33 +1,71 @@
 @import "./vars.scss";
-body, html{
+
+body,
+html {
     overflow-x: hidden;
     width: 100vw;
 }
 
-.nav-menu{
+.nav-menu {
     display: flex;
     flex-direction: column;
-    .nav-menu-item{
+
+    .nav-menu-item {
         text-align: center;
         color: white;
         transition: 0.25s ease;
-        &:hover{
+
+        &:hover {
             scale: 1.25;
         }
     }
 }
 
 
-img{
+img {
     user-select: none;
     -webkit-user-drag: none;
     pointer-events: none;
 }
-.wrap{
+
+.wrap {
     display: flex;
     flex-direction: column;
     padding: 0 $padding;
 }
-.nav-menu-item{
+
+.nav-menu-item {
     color: $grey
 }
+
+.section-heading{
+    font-size: 1.25rem;
+    // text-align: center;
+}
+.text-small{
+    font-size: 0.5rem;
+}
+
+.text{
+    font-size: 1rem;
+}
+
+.text-big{
+    font-size: 1.5rem;
+}
+
+.text-large{
+    font-size: 1.75rem;
+}
+
+.text-super-large{
+    font-size: 2.25rem;
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1280px) {}
+
+@media only screen and (min-width: 1536px) {}

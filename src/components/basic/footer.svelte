@@ -1,6 +1,6 @@
 <footer class="wrap footer-wrap">
     <img src="/img/sys/logo-white.png" alt="logo" />
-    <p class="footer-p">Všechno na jednom místě</p>
+    <p class="section-heading">Všechno na jednom místě</p>
     <div class="nav-menu nav-menu-desktop">
         <a href="#proc-my" class="nav-menu-item">Proč my</a>
         <a href="#o-systemu" class="nav-menu-item">O systému</a>
@@ -19,7 +19,7 @@
             <img src="/img/contact/twitter.svg" alt="twitter" />
         </a>
     </div>
-    <p class="footer-p-small">
+    <p class="text-small">
         © Designed by Antónia Kenderešová | TK Design 
     </p>
 </footer>
@@ -31,6 +31,9 @@
         background-color: $systemLight;
         flex-direction: column;
         align-items: center;
+        .section-heading{
+            text-align: center;
+        }
         & > img {
             max-width: 7rem;
             margin-bottom: 1rem;
@@ -51,9 +54,8 @@
                 }
             }
         }
-        .footer-p-small{
+        .text-small{
             margin-top: 0.5rem;
-            font-size: 0.5rem;
             color: white;
         }
     }

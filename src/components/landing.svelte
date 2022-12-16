@@ -4,11 +4,11 @@
 
 <div class="wrap landing-wrap">
     <div class="landing-left">
-        <h4 class="landing-text-h4">
+        <h4 class="text-super-large">
             <span>Všechno na</span> jednom místě
         </h4>
-        <p class="landing-text-p">
-            Hledáte správny systém pro Vás? Jste tu správne.
+        <p class="text">
+            Hledáte správny systém pro Vás? Jste tu správně.
         </p>
         <SystemButton link="/login"/>
     </div>
@@ -34,7 +34,7 @@
         //     flex-grow: 0;
         // }
     }
-    .landing-text-h4 {
+    .text-super-large {
         font-size: 2.25rem;
         span {
             color: $systemLight;

@@ -6,7 +6,7 @@
     <div class="slider-numbers">
         {#each { length: 11 } as _, index}
             <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <p on:click={() => (sliderValue = index)} class="slider-number {sliderValue == index ? "active" : ""}">
+            <p on:click={() => (sliderValue = index)} class="slider-number text {sliderValue == index ? "active" : ""}">
                 {index}
             </p>
         {/each}
@@ -27,10 +27,10 @@
         </div>
     </div>
     <div class="range-descriptions">
-        <p class="range-description">
+        <p class="text-small">
             Nebyli jsme spokojení
         </p>
-        <p class="range-description">
+        <p class="text-small">
             Největší spokojenost
         </p>
     </div>
@@ -57,7 +57,6 @@
                 justify-content: center;
                 // width: calc(100% / 10);
                 width: 100%;
-                font-size: 1rem;
                 transition: 0.25s ease;
                 color: $systemLight;
                 &:hover {
@@ -185,8 +184,7 @@
             justify-content: space-between;
             width: 100%;
             padding: 0 0.5rem;
-            .range-description{
-                font-size: 0.5rem;
+            .text-small{
                 color: $systemLight;
             }
         }

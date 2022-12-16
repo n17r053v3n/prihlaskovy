@@ -3,14 +3,14 @@
     import SystemButton from "./small/systemButton.svelte";
 </script>
 <div class="wrap review-wrap">
-    <p class="slider-heading">
+    <p class="section-heading">
         Jak jste byli spokojení s našimi službami?
     </p>
     <Slider />
     <div class="review-inputs">
         <input type="text" placeholder="Jméno" />
         <input type="text" placeholder="Příjmení" />
-        <textarea rows="10" placeholder="Prostor pro zpětnou vazbu" class="text-area"/>
+        <textarea rows="5" placeholder="Prostor pro zpětnou vazbu" class="text-area"/>
         <SystemButton link="/send" buttonText="Odeslat folmulář"/>
     </div>
 </div>
@@ -21,7 +21,7 @@
         margin-bottom: 3rem;
         display: block;
         max-width: 100vw;
-        .slider-heading{
+        .section-heading{
             text-align: center;
             margin-bottom: 2rem;
         }
@@ -34,7 +34,9 @@
                 background-color: $systemInputs;
                 border-radius: 5px;
                 padding: 0.5rem;
-                color: #A7AFAE;
+                &::placeholder{
+                    color: #A7AFAE;
+                }
                 resize: none;
                 &:focus-visible{
                     // border: none;

@@ -11,16 +11,16 @@
     <img src="/img/price-tags/background.svg" class="background" alt="" />
     <div class="price-tag-wrap">
         <div class="price-tag-banner">
-            <p class="price-tag-p">{name}</p>
+            <p class="text-small">{name}</p>
         </div>
         <img src="/img/price-tags/{img}.svg" class="thumbnail" alt={img} />
-        <p class="price-tag-price">{price}Kč</p>
-        <p class="price-tag-p">měsíčně</p>
-        <p class="price-tag-p-small">*Cena je uvedena bez DPH</p>
+        <p class="text-large">{price}Kč</p>
+        <p class="text-small">měsíčně</p>
+        <p class="text-small dph">*Cena je uvedena bez DPH</p>
         <div class="price-tag-bullets">
             {#each bullets as bullet}
                 <div class="price-tag-bullet">
-                    <p class="price-tag-p">{bullet}</p>
+                    <p class="text-small">{bullet}</p>
                 </div>
             {/each}
             <!-- <button class="system-button">MÁM ZÁJEM</button> -->
@@ -44,9 +44,8 @@
         & > .thumbnail {
             width: 3.5rem;
         }
-        .price-tag-price {
+        .text-large {
             color: $systemDark;
-            font-size: 1.75rem;
             font-weight: 700;
         }
     }
@@ -80,7 +79,7 @@
         position: relative;
         top: 20px;
         right: 5px;
-        .price-tag-p {
+        .text-small {
             color: white;
             text-transform: uppercase;
         }
@@ -93,13 +92,11 @@
         width: 100%;
         margin-top: 1rem;
     }
-    .price-tag-p {
-        font-size: 0.5rem;
+    .text-small {
         text-align: center;
     }
-    .price-tag-p-small {
+    .dph{
         font-size: 0.25rem;
-        text-align: center;
     }
     .price-tag-bullet {
         border-bottom: 3px dashed $systemDarkest;
