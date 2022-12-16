@@ -3,6 +3,28 @@ body, html {
   width: 100vw;
 }
 
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+.nav-menu .nav-menu-item {
+  text-align: center;
+  color: white;
+  transition: 0.25s ease;
+}
+.nav-menu .nav-menu-item:hover {
+  scale: 1.25;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
 .wrap {
   display: flex;
   flex-direction: column;
@@ -20,4 +42,7 @@ body, html {
   color: #FFF;
   padding: 0.5rem 3rem;
   font-size: 1rem;
+}
+.system-button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
