@@ -38,27 +38,28 @@ img {
     color: $grey
 }
 
-.section-heading{
+.section-heading {
     font-size: 1.25rem;
     // text-align: center;
 }
-.text-small{
+
+.text-small {
     font-size: 0.5rem;
 }
 
-.text{
+.text {
     font-size: 1rem;
 }
 
-.text-big{
+.text-big {
     font-size: 1.5rem;
 }
 
-.text-large{
+.text-large {
     font-size: 1.75rem;
 }
 
-.text-super-large{
+.text-super-large {
     font-size: 2.25rem;
 }
 
@@ -68,4 +69,32 @@ img {
 
 @media only screen and (min-width: 1280px) {}
 
-@media only screen and (min-width: 1536px) {}
+@media only screen and (min-width: 1536px) {
+    .wrap{
+        padding: 0 $padding-1536;
+    }
+    .section-heading {
+        font-size: 2.5rem;
+        // text-align: center;
+    }
+
+    .text-small {
+        font-size: 1.25rem;
+    }
+
+    .text {
+        font-size: 2rem;
+    }
+
+    .text-big {
+        font-size: 3em;
+    }
+
+    .text-large {
+        font-size: 4rem;
+    }
+
+    .text-super-large {
+        font-size: 5rem;
+    }
+}

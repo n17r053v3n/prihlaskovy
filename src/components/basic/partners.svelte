@@ -1,8 +1,12 @@
 <div class="wrap partners-wrap">
     <p class="partners-p">Spolupracujeme</p>
     <div class="partners-images">
-        <img src="/img/partners/aim.png" alt="aim" />
-        <img src="/img/partners/peaches.png" alt="peaches" />
+        <a href="https://aimsport.cz/sportovni-kemp/">
+            <img src="/img/partners/aim.png" alt="aim" />
+        </a>
+        <a href="https://peacheskemp.cz/">
+            <img src="/img/partners/peaches.png" alt="peaches" />
+        </a>
     </div>
 </div>
 
@@ -26,7 +30,7 @@
             align-items: center;
             width: 100%;
             gap: 2rem;
-            img {
+            a {
                 flex-shrink: 1;
                 width: 50%;
                 z-index: 2;
@@ -38,6 +42,9 @@
                     -webkit-filter: grayscale(0);
                     filter: none;
                     scale: 1.2;
+                }
+                img{
+                    width: 100%;
                 }
             }
         }

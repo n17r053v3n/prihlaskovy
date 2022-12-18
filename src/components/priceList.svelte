@@ -11,17 +11,27 @@
             Cenové plány podle Vašich potřeb. Vyberte si ten správny pro Vás.
         </p>
     </div>
-    <div class="price-list-tags">
-        {#each priceTags as priceTag}
-            <!-- <div class="price-list-tag"> -->
-                <PriceTag
-                    name={priceTag.name}
-                    img={priceTag.img}
-                    price={priceTag.price}
-                    bullets={priceTag.bullets}
-                />
-            <!-- </div> -->
-        {/each}
+    <div class="price-tags-background-wrap">
+        <img src="/img/price-tags/background.svg" class="background" alt="" />
+        <div class="price-list-tags">
+            {#each priceTags as priceTag}
+                <div class="price-tag-background-wrap">
+                    <img
+                        src="/img/price-tags/background.svg"
+                        class="background"
+                        alt=""
+                    />
+                    <!-- <div class="price-list-tag"> -->
+                    <PriceTag
+                        name={priceTag.name}
+                        img={priceTag.img}
+                        price={priceTag.price}
+                        bullets={priceTag.bullets}
+                    />
+                    <!-- </div> -->
+                </div>
+            {/each}
+        </div>
     </div>
 </div>
 
@@ -57,10 +67,56 @@
         //     background-image: url("/img/price-tags/background.svg");
         //     width: 100%;
         // }
+        .price-tag-background-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // max-width: 100vw;
+            // background-image: url("/img/price-tags/background.svg");
+        }
         :global(.price-tag-wrap) {
             //vnitrni komponenta
-            width: 150px;
+            // width: 50%;
             flex-shrink: 0;
+        }
+    }
+    .price-tags-background-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > .background {
+            display: none;
+        }
+    }
+    .background {
+            position: absolute;
+            // margin-top: 5rem;
+            z-index: -1;
+            // padding-left: 10rem;
+            width: 100%;
+            flex-grow: 0;
+            // scale: 1.75;
+            overflow-x: hidden;
+            // object-position: 90%;
+            // object-fit: contain;
+        }
+    @media only screen and (min-width: 1024px) {
+        .price-list-tags {
+            flex-direction: row;
+            gap: 3rem;
+            .price-tag-background-wrap {
+                .background {
+                    display: none;
+                }
+            }
+        }
+        .price-tags-background-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & > .background {
+                display: block;
+            }
         }
     }
 </style>

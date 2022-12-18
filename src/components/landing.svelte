@@ -35,7 +35,7 @@
         // }
     }
     .text-super-large {
-        font-size: 2.25rem;
+        // font-size: 2.25rem;
         span {
             color: $systemLight;
         }
@@ -43,6 +43,17 @@
     .landing-right{
         &> img{
             width: 100%;
+        }
+    }
+
+
+
+    @media only screen and (min-width: 1024px){
+        .landing-wrap{
+            flex-direction: row;
+            .landing-left, .landing-right{
+                width: 50%;
+            }
         }
     }
 </style>

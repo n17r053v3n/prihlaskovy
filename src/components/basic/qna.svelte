@@ -20,7 +20,7 @@
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div class="single-qna" on:click={() => visibility(index)}>
             <div class="single-qna-base">
-                <p class="single-qna-head">{question.question}</p>
+                <p class="text-small">{question.question}</p>
                 <img
                     src="/img/arrow.svg"
                     class={visibles.includes(index) ? "rotate" : ""}
@@ -68,7 +68,7 @@
             align-items: center;
             width: 100%;
             flex-shrink: 0;
-            .single-qna-head {
+            .text-small {
                 color: $systemLight;
                 font-size: 0.75rem;
             }
