@@ -33,6 +33,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
+            // justify-content: center;
             gap: 1rem;
             & > img {
                 width: 2.75rem;
