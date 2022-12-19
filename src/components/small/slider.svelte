@@ -1,5 +1,5 @@
 <script lang="ts">
-    let sliderValue = 0;
+    let sliderValue = 5;
 </script>
 
 <div class="slider-wrap">
@@ -47,8 +47,8 @@
         .slider-numbers {
             display: flex;
             flex-direction: row;
-            // width: 100%;
-            width: calc(100% - 5px);
+            width: 100%;
+            // width: calc(100% - 5px);
             // flex-shrink: 0;
             // justify-content: space-between;
             // padding: 0 5px;
@@ -73,7 +73,7 @@
 
         // important
         .range {
-            width: calc(100% - 10px);
+            width: calc(100% - ((100% / 11)) + 20px);
             // height: 80px;
             // padding: 0 5px;z
             margin-top: 1rem;

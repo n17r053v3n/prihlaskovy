@@ -22,7 +22,7 @@
     // }
     .system-wrap {
         gap: 3.25rem;
-        margin: 4rem 0;
+        margin: 6rem 0;
     }
     .system-single {
         display: flex;

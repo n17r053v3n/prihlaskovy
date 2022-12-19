@@ -22,8 +22,8 @@
             </div>
         {/each}
         <!-- <button class="system-button">MÁM ZÁJEM</button> -->
-        <SystemButton link="#" buttonText="MÁM ZÁJEM" size="small" />
     </div>
+    <SystemButton link="#" buttonText="MÁM ZÁJEM" size="small" />
 </div>
 
 <style lang="scss" scoped>
@@ -34,7 +34,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 1rem 1rem;
+        padding: 0 2rem 1rem;
         z-index: 2;
         background-color: white;
         overflow-x: hidden;
@@ -46,7 +46,7 @@
             font-weight: 700;
         }
     }
-    
+
     .price-tag-banner {
         background-color: $systemDark;
         width: min-content;
@@ -57,7 +57,7 @@
         justify-self: flex-start;
         position: relative;
         top: 18px;
-        right: 25px;
+        right: 45px;
         .text-small {
             color: white;
             text-transform: uppercase;
@@ -69,7 +69,8 @@
         align-items: center;
         gap: 0.5rem;
         width: 100%;
-        margin-top: 1rem;
+        margin: 1rem 0;
+        // padding: 0 1rem;
     }
     .text-small {
         text-align: center;
@@ -79,15 +80,20 @@
     }
     .price-tag-bullet {
         border-bottom: 3px dashed $systemDarkest;
-        width: 70%;
-        padding-bottom: 0.25rem;
+        // width: 70%;
+        padding: 0.25rem;
     }
 
-    @media only screen and (min-width: 1536px){
-        .price-tag-wrap{
+    @media only screen and (min-width: 1024px) {
+    }
+
+    @media only screen and (min-width: 1536px) {
+        .price-tag-wrap {
             padding: 0 2rem 1rem;
-            &> .thumbnail{
+            & > .thumbnail {
                 height: 7rem;
+                width: 7rem;
+                z-index: 5;
             }
         }
         .price-tag-banner {
@@ -95,7 +101,7 @@
             top: 35px;
             right: 50px;
         }
-        .dph{
+        .dph {
             font-size: 0.75rem;
         }
     }

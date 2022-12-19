@@ -8,10 +8,10 @@
         <img src="/img/sys/logo-dark.png" alt="Logo" />
     </div>
     <div class="nav-menu nav-menu-desktop">
-        <a href="#proc-my" class="nav-menu-item">Proč my</a>
-        <a href="#o-systemu" class="nav-menu-item">O systému</a>
-        <a href="#cenik" class="nav-menu-item">Ceník</a>
-        <a href="#kontakt" class="nav-menu-item">Kontakt</a>
+        <a href="#proc-my" class="nav-menu-item text-small">Proč my</a>
+        <a href="#o-systemu" class="nav-menu-item text-small">O systému</a>
+        <a href="#cenik" class="nav-menu-item text-small">Ceník</a>
+        <a href="#kontakt" class="nav-menu-item text-small">Kontakt</a>
     </div>
     <div class="nav-menu nav-menu-mobile">
         <button
@@ -26,21 +26,24 @@
     </div>
 </div>
 {#if active}
-    <ModalMenu on:closeMenu={() => active = !active}/>
+    <ModalMenu on:closeMenu={() => (active = !active)} />
 {/if}
 
 <style lang="scss" scoped>
     @import "../../styles/hamburgers.css";
     @import "../../styles/vars.scss";
     .nav-wrap {
+        margin: 0;
         align-items: center;
+        // flex-shrink: 0;
+        // width: max-content;
         width: calc(100% - $padding * 2);
         justify-content: space-between;
         // padding: 1rem $padding;
         height: 100px;
         flex-direction: row;
         position: fixed;
-		z-index: 999;
+        z-index: 999;
         background-color: white;
     }
     .nav-img {
@@ -51,10 +54,13 @@
     // .nav-menu {
     // }
     .nav-menu-desktop {
+        a {
+            color: #707070;
+        }
         display: none;
     }
     .nav-menu-mobile {
-        .hamburger-box{
+        .hamburger-box {
             width: 20px;
         }
         .hamburger-inner,
@@ -70,6 +76,28 @@
                 background-color: $systemLight;
                 // width: 20px;
             }
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        .nav-menu-desktop {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            .nav-menu-item{
+                font-weight: 500;
+                &:hover{
+                    scale: 1.1;
+                    color: $systemDark;
+                }
+            }
+        }
+        .nav-menu-mobile {
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 1536px) {
+        .nav-wrap{
+            width: calc(100% - $padding-1536 * 2);
         }
     }
 </style>

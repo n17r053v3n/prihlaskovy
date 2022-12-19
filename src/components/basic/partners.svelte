@@ -1,5 +1,5 @@
 <div class="wrap partners-wrap">
-    <p class="partners-p">Spolupracujeme</p>
+    <p class="section-heading">Spolupracujeme</p>
     <div class="partners-images">
         <a href="https://aimsport.cz/sportovni-kemp/">
             <img src="/img/partners/aim.png" alt="aim" />
@@ -13,11 +13,11 @@
 <style lang="scss" scoped>
     @import "../../styles/vars.scss";
     .partners-wrap {
-        margin: 5rem 0;
+        
         flex-direction: column;
         z-index: 1;
-        .partners-p {
-            font-size: 1.25rem;
+        .section-heading {
+            // font-size: 1.25rem;
             color: $systemLight;
             // font-weight: 400;
             text-align: center;
@@ -43,8 +43,26 @@
                     filter: none;
                     scale: 1.2;
                 }
-                img{
+                img {
                     width: 100%;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        .partners-wrap {
+            // .section-heading {
+            // }
+            .partners-images {
+                justify-content: center;
+                gap: 6rem;
+                a {
+                    width: 300px;
+                    &:hover {
+                    }
+                    img {
+                        // width: 300px;
+                    }
                 }
             }
         }

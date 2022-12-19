@@ -40,6 +40,9 @@
     // #cenik {
     //     scroll-margin-top: 100px;
     // }
+    .price-list-wrap{
+        
+    }
     .price-list-top {
         display: flex;
         flex-direction: column;

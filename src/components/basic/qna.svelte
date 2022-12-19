@@ -20,7 +20,7 @@
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div class="single-qna" on:click={() => visibility(index)}>
             <div class="single-qna-base">
-                <p class="text-small">{question.question}</p>
+                <p class="text">{question.question}</p>
                 <img
                     src="/img/arrow.svg"
                     class={visibles.includes(index) ? "rotate" : ""}
@@ -29,7 +29,7 @@
             </div>
             {#if visibles.includes(index)}
                 <div
-                    class="text"
+                    class="text-small"
                     in:slide={{ duration: 200 }}
                     out:slide={{ duration: 200 }}
                 >
@@ -49,8 +49,8 @@
     .qna-wrap {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
-        margin-top: 3rem;
+        gap: 1rem;
+        
     }
     .single-qna {
         display: flex;
@@ -68,19 +68,34 @@
             align-items: center;
             width: 100%;
             flex-shrink: 0;
-            .text-small {
+            .text {
                 color: $systemLight;
-                font-size: 0.75rem;
+                // font-size: 0.75rem;
+                margin: 0;
             }
             img {
                 transition: 0.25s ease;
             }
         }
-        .text {
+        .text-small {
             margin: 1rem 0;
         }
     }
     .rotate {
         rotate: 90deg;
+    }
+    @media only screen and (min-width: 1536px){
+        .qna-wrap{
+            gap: 2rem;
+        }
+        .single-qna{
+            padding: 2rem 3rem;
+            .single-qna-base{
+
+                img{
+                    width: 50px;
+                }
+            }
+        }
     }
 </style>

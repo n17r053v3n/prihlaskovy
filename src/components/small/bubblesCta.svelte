@@ -2,7 +2,7 @@
     export let bigText: string;
     export let smallText: string;
     export let img: string;
-    export let imgMarginTop: string = "0"; // in rems
+    // export let imgMarginTop: string = "0"; // in rems
     export let imgMarginRight: string = "0"; // in rems
     export let id: string = "";
 </script>
@@ -16,7 +16,7 @@
     <img
         src="/img/{img}.png"
         alt={img}
-        style="margin-top: {parseInt(imgMarginTop)}rem; margin-right: {parseInt(
+        style="margin-right: {parseInt(
             imgMarginRight
         )}rem;"
     />
@@ -28,7 +28,7 @@
     .review-cta {
         scroll-margin-top: 6.25rem;
         margin: 5rem 0 3rem;
-        padding-top: 3.5rem;
+        padding-top: 3rem;
         display: flex;
         flex-direction: column;
         background-image: url("/img/text-background.svg");
@@ -42,7 +42,8 @@
             margin-left: 2rem;
         }
         .text-big {
-            max-width: 240px;
+            max-width: 245px;
+            text-transform: uppercase;
         }
         .text-small {
             max-width: 200px;
@@ -52,6 +53,28 @@
             align-self: flex-end;
             margin-right: -8.5rem;
             // width: 60%;
+        }
+    }
+    @media only screen and (min-width: 1536px) {
+        .review-cta {
+            background-size: 900px;
+            padding-top: 10rem;
+            background-position: -100px 0;
+            p {
+                margin-left: 11rem;
+            }
+            .text-big {
+                max-width: 600px;
+            }
+            .text-small {
+                max-width: 500px;
+                margin-top: 1rem;
+            }
+            img {
+                margin-top: -10rem;
+                // width: 800px;
+                height: 500px;
+            }
         }
     }
 </style>

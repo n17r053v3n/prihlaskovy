@@ -19,7 +19,7 @@
         text-align: center;
         &:hover {
             cursor: pointer;
-            scale: 1.15;
+            scale: 1.1;
         }
     }
     .small{
@@ -29,5 +29,15 @@
     .medium{
         font-size: 1rem;
         padding: 0.5rem 3rem;
+    }
+    @media only screen and (min-width: 1536px){
+        .small{
+            font-size: 1.25rem;
+            padding: 0.5rem 3rem;
+        }
+        .medium{
+            font-size: 1.75rem;
+            padding: 0.75rem 6rem;
+        }
     }
 </style>

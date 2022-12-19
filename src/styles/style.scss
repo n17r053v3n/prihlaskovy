@@ -32,6 +32,7 @@ img {
     display: flex;
     flex-direction: column;
     padding: 0 $padding;
+    margin: 4rem 0;
 }
 
 .nav-menu-item {
@@ -44,7 +45,7 @@ img {
 }
 
 .text-small {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
 }
 
 .text {
@@ -65,21 +66,31 @@ img {
 
 @media only screen and (min-width: 768px) {}
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+    .nav-menu {
+        flex-direction: row;
+        gap: 1rem;
+        .nav-menu-item {
+            &:hover {}
+        }
+    }
+}
 
 @media only screen and (min-width: 1280px) {}
 
 @media only screen and (min-width: 1536px) {
-    .wrap{
+    .wrap {
         padding: 0 $padding-1536;
+        margin: 6rem 0;
     }
+
     .section-heading {
         font-size: 2.5rem;
         // text-align: center;
     }
 
     .text-small {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .text {
