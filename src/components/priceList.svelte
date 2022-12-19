@@ -37,9 +37,9 @@
 
 <style lang="scss" scoped>
     @import "../styles/vars.scss";
-    #cenik {
-        scroll-margin-top: 100px;
-    }
+    // #cenik {
+    //     scroll-margin-top: 100px;
+    // }
     .price-list-top {
         display: flex;
         flex-direction: column;

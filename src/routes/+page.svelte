@@ -9,11 +9,11 @@
     import Partners from "../components/basic/partners.svelte";
 </script>
 <Landing/>
-<BubblesCta bigText="Proč zrovna MY?" smallText="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod. Tempor invidunt ut labore et dolore magna aliquyam erat, sed" img="why-us" imgMarginRight="-3"/>
+<BubblesCta bigText="Proč zrovna MY?" smallText="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod. Tempor invidunt ut labore et dolore magna aliquyam erat, sed" img="why-us" imgMarginRight="-3" id="proc-my"/>
 <AboutSystem/>
 <PriceList/>
 <Partners/>
 <Qna/>
-<BubblesCta bigText="Vaše zpětná vazba je pro nás důležitá" smallText="Zanechte nám hodnocení aby sme vědeli co máme zlepšit příště." img="review-cta" imgMarginRight="-8.5"/>
+<BubblesCta bigText="Vaše zpětná vazba je pro nás důležitá" smallText="Zanechte nám hodnocení aby sme vědeli co máme zlepšit příště." img="review-cta" imgMarginRight="-8.5" id=""/>
 <Review/>
 <Contact/>

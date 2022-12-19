@@ -1,4 +1,4 @@
-<div class="wrap contact-wrap">
+<div class="wrap contact-wrap" id="kontakt">
     <h4 class="text-large">Kontakt</h4>
     <p class="text">Tomáš Otruba</p>
     <p class="text">IČ: 704 62 810</p>

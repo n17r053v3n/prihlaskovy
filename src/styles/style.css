@@ -30,6 +30,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 0 2.25rem;
+  scroll-margin-top: 6.25rem;
 }
 
 .nav-menu-item {

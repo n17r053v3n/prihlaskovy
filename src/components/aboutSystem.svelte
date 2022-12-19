@@ -17,9 +17,9 @@
 
 <style lang="scss" scoped>
     @import "../styles/vars.scss";
-    #o-systemu {
-        scroll-margin-top: 100px;
-    }
+    // #o-systemu {
+    //     scroll-margin-top: 100px;
+    // }
     .system-wrap {
         gap: 3.25rem;
         margin: 4rem 0;
