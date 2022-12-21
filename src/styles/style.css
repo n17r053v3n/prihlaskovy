@@ -31,6 +31,7 @@ img {
   flex-direction: column;
   padding: 0 2.25rem;
   margin: 4rem 0;
+  scroll-margin-top: 6.25rem;
 }
 
 .nav-menu-item {
@@ -61,10 +62,36 @@ img {
   font-size: 2.25rem;
 }
 
-@media only screen and (min-width: 1024px) {
-  .nav-menu {
+@media only screen and (min-width: 768px) {
+  .wrap {
+    padding: 0 3.5rem;
+  }
+  .wrap .nav-menu {
     flex-direction: row;
     gap: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .wrap {
+    padding: 0 5rem;
+  }
+  .section-heading {
+    font-size: 1.5rem;
+  }
+  .text-small {
+    font-size: 1rem;
+  }
+  .text {
+    font-size: 1.5rem;
+  }
+  .text-big {
+    font-size: 2rem;
+  }
+  .text-large {
+    font-size: 2.5rem;
+  }
+  .text-super-large {
+    font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1536px) {

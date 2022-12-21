@@ -51,8 +51,12 @@
             align-items: center;
             gap: 0.5rem;
             color: $systemLight;
+            transition: 0.25s ease;
             img {
                 height: 1rem;
+            }
+            &:hover{
+                scale: 1.1;
             }
         }
     }

@@ -36,7 +36,7 @@
 			transition: 0.25s ease;
 			&:hover {
 				// transform: scale(1.3);
-				color: $systemDark;
+				color: $systemMedium;
 			}
 		}
 	}

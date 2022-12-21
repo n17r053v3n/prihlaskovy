@@ -1,12 +1,18 @@
 // paddings
 $padding: 2.25rem;
+$padding-768: 3.5rem;
 $padding-1024: 5rem;
+$padding-1280: 8rem;
 $padding-1536: 11rem;
+
+// @media only screen and (min-width: 600px){
+//     $padding: 5rem;
+// }
 
 // colors
 $grey: #707070;
 $black: #000000;
 $systemLight: #02CBC6;
-$systemDark: #1FC2BB;
-$systemDarkest: #00A69C;
+$systemMedium: #1FC2BB;
+$systemDark: #00A69C;
 $systemInputs: #DBEAE9;

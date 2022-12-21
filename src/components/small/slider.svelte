@@ -61,13 +61,13 @@
                 color: $systemLight;
                 &:hover {
                     scale: 1.5;
-                    color: $systemDark;
+                    color: $systemMedium;
                     cursor: pointer;
                 }
             }
             .active {
                 scale: 1.5;
-                color: $systemDark;
+                color: $systemMedium;
             }
         }
 
@@ -186,6 +186,13 @@
             padding: 0 0.5rem;
             .text-small{
                 color: $systemLight;
+            }
+        }
+    }
+    @media only screen and (min-width: 1024px){
+        .slider-wrap{
+            .slider-numbers{
+                margin-bottom: 1rem;
             }
         }
     }

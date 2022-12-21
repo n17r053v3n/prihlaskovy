@@ -26,7 +26,7 @@
     @import "../../styles/vars.scss";
 
     .review-cta {
-        scroll-margin-top: 6.25rem;
+        // scroll-margin-top: 6.25rem;
         margin: 5rem 0 3rem;
         padding-top: 3rem;
         display: flex;
@@ -39,7 +39,7 @@
         // padding: 3.5rem 2rem;
         p {
             color: white;
-            margin-left: 2rem;
+            margin-left: $padding;
         }
         .text-big {
             max-width: 245px;
@@ -48,6 +48,7 @@
         .text-small {
             max-width: 200px;
             margin-top: 0.5rem;
+            font-weight: 500;
         }
         img {
             align-self: flex-end;
@@ -55,20 +56,62 @@
             // width: 60%;
         }
     }
+    @media only screen and (min-width: 768px) {
+        .review-cta {
+            background-size: 500px;
+            padding-top: 6rem;
+            background-position: -100px 0;
+            p {
+                margin-left: $padding-768;
+            }
+            .text-big {
+                max-width: 300px;
+            }
+            .text-small {
+                max-width: 250px;
+                margin-top: 1rem;
+            }
+            img {
+                margin-top: -6rem;
+                // width: 800px;
+                height: 300px;
+            }
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        .review-cta {
+            background-size: 600px;
+            padding-top: 7rem;
+            background-position: -100px 0;
+            p {
+                margin-left: $padding-1024;
+            }
+            .text-big {
+                max-width: 400px;
+            }
+            .text-small {
+                max-width: 300px;
+                margin-top: 1rem;
+            }
+            img {
+                margin-top: -10rem;
+                // width: 800px;
+                height: 400px;
+            }
+        }
+    }
     @media only screen and (min-width: 1536px) {
         .review-cta {
             background-size: 900px;
             padding-top: 10rem;
-            background-position: -100px 0;
             p {
-                margin-left: 11rem;
+                margin-left: $padding-1536;
             }
             .text-big {
                 max-width: 600px;
             }
             .text-small {
                 max-width: 500px;
-                margin-top: 1rem;
             }
             img {
                 margin-top: -10rem;

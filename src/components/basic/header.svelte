@@ -1,5 +1,6 @@
 <script>
     import ModalMenu from "../modalMenu.svelte";
+    import SystemButton from "../small/systemButton.svelte";
     let active = false;
 </script>
 
@@ -13,6 +14,11 @@
         <a href="#cenik" class="nav-menu-item text-small">Ceník</a>
         <a href="#kontakt" class="nav-menu-item text-small">Kontakt</a>
     </div>
+    <SystemButton
+        buttonText="Přihlášení pro členy"
+        size="small"
+        style="outlined"
+    />
     <div class="nav-menu nav-menu-mobile">
         <button
             class="hamburger hamburger--boring {active ? 'is-active' : ''}"
@@ -45,6 +51,9 @@
         position: fixed;
         z-index: 999;
         background-color: white;
+        :global(.system-button) {
+            display: none;
+        }
     }
     .nav-img {
         img {
@@ -55,10 +64,11 @@
     // }
     .nav-menu-desktop {
         a {
-            color: #707070;
+            color: $grey;
         }
         display: none;
     }
+
     .nav-menu-mobile {
         .hamburger-box {
             width: 20px;
@@ -78,16 +88,28 @@
             }
         }
     }
+    @media only screen and (min-width: 768px) {
+        .nav-wrap {
+            width: calc(100% - $padding-768 * 2);
+        }
+    }
     @media only screen and (min-width: 1024px) {
+        .nav-wrap {
+            width: calc(100% - $padding-1024 * 2);
+            :global(.system-button) {
+                display: block;
+            }
+        }
         .nav-menu-desktop {
+            justify-self: center;
             display: flex;
             flex-direction: row;
             gap: 1rem;
-            .nav-menu-item{
+            .nav-menu-item {
                 font-weight: 500;
-                &:hover{
+                &:hover {
                     scale: 1.1;
-                    color: $systemDark;
+                    color: $systemMedium;
                 }
             }
         }
@@ -96,7 +118,7 @@
         }
     }
     @media only screen and (min-width: 1536px) {
-        .nav-wrap{
+        .nav-wrap {
             width: calc(100% - $padding-1536 * 2);
         }
     }

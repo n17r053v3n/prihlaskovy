@@ -40,8 +40,7 @@
     // #cenik {
     //     scroll-margin-top: 100px;
     // }
-    .price-list-wrap{
-        
+    .price-list-wrap {
     }
     .price-list-top {
         display: flex;
@@ -65,7 +64,7 @@
         align-items: center;
         flex-shrink: 0;
         gap: 1.5rem;
-        margin-top: 5rem;
+        margin-top: 3rem;
         // .price-list-tag{
         //     background-image: url("/img/price-tags/background.svg");
         //     width: 100%;
@@ -92,21 +91,25 @@
         }
     }
     .background {
-            position: absolute;
-            // margin-top: 5rem;
-            z-index: -1;
-            // padding-left: 10rem;
-            width: 100%;
-            flex-grow: 0;
-            // scale: 1.75;
-            overflow-x: hidden;
-            // object-position: 90%;
-            // object-fit: contain;
-        }
-    @media only screen and (min-width: 1024px) {
+        position: absolute;
+        // margin-top: 5rem;
+        z-index: -1;
+        // padding-left: 10rem;
+        // height: ;
+        // scale
+        width: 100%;
+        flex-grow: 0;
+        // scale: 1.75;
+        overflow-x: hidden;
+        // object-position: 90%;
+        // object-fit: contain;
+    }
+
+    @media only screen and (min-width: 768px) {
         .price-list-tags {
             flex-direction: row;
-            gap: 3rem;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
             .price-tag-background-wrap {
                 .background {
                     display: none;
@@ -120,6 +123,12 @@
             & > .background {
                 display: block;
             }
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        .price-list-tags {
+            gap: 3rem;
+            margin-top: 5rem;
         }
     }
 </style>

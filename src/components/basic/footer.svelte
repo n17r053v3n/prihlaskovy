@@ -27,6 +27,7 @@
     .footer-wrap {
         margin: 0;
         padding: 2rem $padding;
+
         background-color: $systemLight;
         flex-direction: column;
         align-items: center;
@@ -57,6 +58,21 @@
         .text-small {
             // margin-top: 0.5rem;
             color: white;
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        .footer-wrap {
+            gap: 0.75rem;
+            padding: 4rem $padding-1024;
+            & > img {
+                max-width: 10rem;
+            }
+            .socials {
+                gap: 1.5rem;
+                img {
+                    width: 30px;
+                }
+            }
         }
     }
     @media only screen and (min-width: 1536px) {

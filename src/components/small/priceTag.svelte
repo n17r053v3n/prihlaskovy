@@ -42,13 +42,13 @@
             height: 3.5rem;
         }
         .text-large {
-            color: $systemDark;
+            color: $systemMedium;
             font-weight: 700;
         }
     }
 
     .price-tag-banner {
-        background-color: $systemDark;
+        background-color: $systemMedium;
         width: min-content;
         padding: 0.25rem 1.5rem 0.75rem;
         border-radius: 0 30px 30px 0;
@@ -79,12 +79,28 @@
         font-size: 0.25rem;
     }
     .price-tag-bullet {
-        border-bottom: 3px dashed $systemDarkest;
+        border-bottom: 3px dashed $systemDark;
         // width: 70%;
         padding: 0.25rem;
     }
 
     @media only screen and (min-width: 1024px) {
+        .price-tag-wrap {
+            // padding: 0 rem 0.5rem;
+            & > .thumbnail {
+                height: 5rem;
+                width: 5rem;
+                z-index: 5;
+            }
+        }
+        .price-tag-banner {
+            // padding: 0.5rem 1.5rem 0.75rem;
+            top: 30px;
+            right: 50px;
+        }
+        .dph {
+            font-size: 0.5rem;
+        }
     }
 
     @media only screen and (min-width: 1536px) {

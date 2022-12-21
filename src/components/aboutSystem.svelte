@@ -52,7 +52,7 @@
             }
         }
     }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
         .system-wrap {
             flex-direction: row;
             .system-single {

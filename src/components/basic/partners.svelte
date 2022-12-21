@@ -49,20 +49,33 @@
             }
         }
     }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px){
         .partners-wrap {
-            // .section-heading {
-            // }
             .partners-images {
                 justify-content: center;
+                gap: 2rem;
+                a {
+                    width: 200px;
+                    // &:hover {
+                    // }
+                    // img {
+                    //     // width: 300px;
+                    // }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        .partners-wrap {
+            .partners-images {
                 gap: 6rem;
                 a {
                     width: 300px;
-                    &:hover {
-                    }
-                    img {
-                        // width: 300px;
-                    }
+                    // &:hover {
+                    // }
+                    // img {
+                    //     // width: 300px;
+                    // }
                 }
             }
         }

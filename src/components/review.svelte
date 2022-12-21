@@ -18,7 +18,6 @@
 <style lang="scss" scoped>
     @import "../styles/vars.scss";
     .review-wrap {
-        
         display: block;
         max-width: 100vw;
         .section-heading{
@@ -46,7 +45,7 @@
                 }
                 resize: none;
                 &:focus-visible{
-                    outline: 2px solid $systemDark;
+                    outline: 2px solid $systemMedium;
                     background-color: unset;
                     // border: none;
                 }
@@ -62,7 +61,7 @@
             // }
         }
     }
-    @media only screen and (min-width: 1024px){
+    @media only screen and (min-width: 768px){
         .review-wrap {
             .review-inputs {
                 flex-direction: row;
