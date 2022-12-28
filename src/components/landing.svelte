@@ -2,7 +2,7 @@
     import SystemButton from "./small/systemButton.svelte";
 </script>
 
-<div class="wrap landing-wrap">
+<div class="wrap landing-wrap page-land">
     <div class="landing-left">
         <h4 class="text-super-large">
             <span>Všechno na</span><br>jednom místě
@@ -23,7 +23,7 @@
         // margin-top: 2.5rem;
         flex-direction: column;
         gap: 3rem;
-        padding-top: 3rem;
+        // padding-top: 3rem;
     }
     .landing-left{
         display: flex;
@@ -49,7 +49,7 @@
 
     @media only screen and (min-width: 768px){
         .landing-wrap{
-            padding-top: 5rem;
+            // padding-top: 5rem;
             flex-direction: row;
             .landing-left, .landing-right{
                 width: 50%;
@@ -61,7 +61,7 @@
     }
     @media only screen and (min-width: 1024px){
         .landing-wrap{
-            padding-top: 6rem;
+            // padding-top: 6rem;
             .landing-right{
                 margin-top: -2rem;
             }

@@ -34,6 +34,10 @@ img {
   scroll-margin-top: 6.25rem;
 }
 
+.page-land {
+  padding-top: 3rem;
+}
+
 .nav-menu-item {
   color: #707070;
 }
@@ -70,10 +74,16 @@ img {
     flex-direction: row;
     gap: 1rem;
   }
+  .page-land {
+    padding-top: 5rem;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .wrap {
     padding: 0 5rem;
+  }
+  .page-land {
+    padding-top: 6rem;
   }
   .section-heading {
     font-size: 1.5rem;

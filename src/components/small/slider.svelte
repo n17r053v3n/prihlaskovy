@@ -6,7 +6,7 @@
     <div class="slider-numbers">
         {#each { length: 11 } as _, index}
             <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <p on:click={() => (sliderValue = index)} class="slider-number text {sliderValue == index ? "active" : ""}">
+            <p on:click={() => (sliderValue = index)} class="slider-number text {sliderValue === index ? "active" : ""}">
                 {index}
             </p>
         {/each}

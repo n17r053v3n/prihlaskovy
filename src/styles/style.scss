@@ -21,7 +21,6 @@ html {
     }
 }
 
-
 img {
     user-select: none;
     -webkit-user-drag: none;
@@ -34,6 +33,10 @@ img {
     padding: 0 $padding;
     margin: 4rem 0;
     scroll-margin-top: 6.25rem;
+}
+
+.page-land{
+    padding-top: 3rem;
 }
 
 .nav-menu-item {
@@ -73,11 +76,17 @@ img {
             gap: 1rem;
         }
     }
+    .page-land{
+        padding-top: 5rem;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     .wrap {
         padding: 0 $padding-1024;
+    }
+    .page-land{
+        padding-top: 6rem;
     }
 
     .section-heading {
