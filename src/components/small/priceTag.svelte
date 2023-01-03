@@ -86,15 +86,18 @@
 
     @media only screen and (min-width: 1024px) {
         .price-tag-wrap {
-            // padding: 0 rem 0.5rem;
+            padding: 0 2rem 1.5rem;
             & > .thumbnail {
                 height: 5rem;
                 width: 5rem;
                 z-index: 5;
             }
         }
+        .price-tag-bullets {
+            margin-bottom: 1.5rem;
+        }
         .price-tag-banner {
-            // padding: 0.5rem 1.5rem 0.75rem;
+            // padding: 0.5rem 1.5rem 1.5rem;
             top: 30px;
             right: 50px;
         }
@@ -105,7 +108,7 @@
 
     @media only screen and (min-width: 1536px) {
         .price-tag-wrap {
-            padding: 0 2rem 1rem;
+            // padding: 0 2rem rem;
             & > .thumbnail {
                 height: 7rem;
                 width: 7rem;
