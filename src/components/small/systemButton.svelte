@@ -25,6 +25,9 @@
             scale: 1.1;
         }
     }
+    .full-width:hover{
+        scale: 1.025;
+    }
     .outlined {
         background-color: #fff;
         border: 2px solid $systemMedium;

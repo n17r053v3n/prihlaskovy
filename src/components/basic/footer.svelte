@@ -1,12 +1,17 @@
+<script>
+    import Nav from "./nav.svelte";
+</script>
+
 <footer class="wrap footer-wrap">
     <img src="/img/sys/logo-white.png" alt="logo" />
     <p class="section-heading">Všechno na jednom místě</p>
-    <div class="nav-menu nav-menu-desktop">
+    <!-- <div class="nav-menu nav-menu-desktop">
         <a href="#proc-my" class="nav-menu-item text-small">Proč my</a>
         <a href="#o-systemu" class="nav-menu-item text-small">O systému</a>
         <a href="#cenik" class="nav-menu-item text-small">Ceník</a>
         <a href="#kontakt" class="nav-menu-item text-small">Kontakt</a>
-    </div>
+    </div> -->
+    <Nav/>
     <div class="socials">
         <a href="facebook">
             <img src="/img/contact/facebook.svg" alt="facebook" />
@@ -39,8 +44,8 @@
             max-width: 7rem;
             margin-bottom: 1rem;
         }
-        .nav-menu {
-            // margin-top: 1rem;
+        :global(.nav-menu-item:hover) {
+            color: white;
         }
         .socials {
             // margin-top: 1rem;

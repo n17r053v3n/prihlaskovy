@@ -2,15 +2,20 @@
 	import { createEventDispatcher } from "svelte";
 	import { slide } from "svelte/transition";
 
+	import navItems from "../data/nav-items";
+
 	const dispatch = createEventDispatcher();
 </script>
 
 <div class="modal" in:slide out:slide>
-	<a href="#proc-my" class="nav-menu-item" on:click={() => dispatch("closeMenu")}>Proč my</a>
-	<a href="#o-systemu" class="nav-menu-item" on:click={() => dispatch("closeMenu")}>O systému</a>
+	{#each navItems as navItem}
+	<a href={navItem.link} class="nav-menu-item" on:click={() => dispatch("closeMenu")}>{navItem.title}</a>
+	{/each}
+	<!-- <a href="#o-systemu" class="nav-menu-item" on:click={() => dispatch("closeMenu")}>O systému</a>
 	<a href="#cenik" class="nav-menu-item" on:click={() => dispatch("closeMenu")}>Ceník</a>
-	<a href="#kontakt" class="nav-menu-item" on:click={() => dispatch("closeMenu")}>Kontakt</a>
+	<a href="#kontakt" class="nav-menu-item" on:click={() => dispatch("closeMenu")}>Kontakt</a> -->
 	<!-- <div class="space" /> -->
+
 </div>
 
 <style lang="scss" scoped>
@@ -35,7 +40,7 @@
 			text-decoration: none;
 			transition: 0.25s ease;
 			&:hover {
-				// transform: scale(1.3);
+				transform: scale(1.1);
 				color: $systemMedium;
 			}
 		}

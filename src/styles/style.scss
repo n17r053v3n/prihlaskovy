@@ -6,21 +6,6 @@ html {
     width: 100vw;
 }
 
-.nav-menu {
-    display: flex;
-    flex-direction: column;
-
-    .nav-menu-item {
-        text-align: center;
-        color: white;
-        transition: 0.25s ease;
-
-        &:hover {
-            scale: 1.25;
-        }
-    }
-}
-
 img {
     user-select: none;
     -webkit-user-drag: none;
@@ -35,7 +20,7 @@ img {
     scroll-margin-top: 6.25rem;
 }
 
-.page-land{
+.page-land {
     padding-top: 3rem;
 }
 
@@ -71,12 +56,9 @@ img {
 @media only screen and (min-width: 768px) {
     .wrap {
         padding: 0 $padding-768;
-        .nav-menu {
-            flex-direction: row;
-            gap: 1rem;
-        }
     }
-    .page-land{
+
+    .page-land {
         padding-top: 5rem;
     }
 }
@@ -85,7 +67,8 @@ img {
     .wrap {
         padding: 0 $padding-1024;
     }
-    .page-land{
+
+    .page-land {
         padding-top: 6rem;
     }
 
@@ -121,6 +104,10 @@ img {
     .wrap {
         padding: 0 $padding-1536;
         margin: 6rem 0;
+    }
+
+    .page-land {
+        padding-top: 6rem;
     }
 
     .section-heading {

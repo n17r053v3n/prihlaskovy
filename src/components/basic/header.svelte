@@ -1,6 +1,7 @@
 <script>
     import ModalMenu from "../modalMenu.svelte";
     import SystemButton from "../small/systemButton.svelte";
+    import Nav from "./nav.svelte";
     let active = false;
 </script>
 
@@ -8,18 +9,19 @@
     <div class="nav-img">
         <img src="/img/sys/logo-dark.png" alt="Logo" />
     </div>
-    <div class="nav-menu nav-menu-desktop">
-        <a href="#proc-my" class="nav-menu-item text-small">Proč my</a>
+    <div class="nav-menu-desktop">
+        <!-- <a href="#proc-my" class="nav-menu-item text-small">Proč my</a>
         <a href="#o-systemu" class="nav-menu-item text-small">O systému</a>
         <a href="#cenik" class="nav-menu-item text-small">Ceník</a>
-        <a href="#kontakt" class="nav-menu-item text-small">Kontakt</a>
+        <a href="#kontakt" class="nav-menu-item text-small">Kontakt</a> -->
+        <Nav />
     </div>
     <SystemButton
         buttonText="Přihlášení pro členy"
         size="small"
         style="outlined"
     />
-    <div class="nav-menu nav-menu-mobile">
+    <div class="nav-menu-mobile">
         <button
             class="hamburger hamburger--boring {active ? 'is-active' : ''}"
             type="button"
@@ -63,7 +65,7 @@
     // .nav-menu {
     // }
     .nav-menu-desktop {
-        a {
+        :global(a) {
             color: $grey;
         }
         display: none;
