@@ -17,6 +17,7 @@
         <Nav />
     </div>
     <SystemButton
+        link="/login"
         buttonText="Přihlášení pro členy"
         size="small"
         style="outlined"

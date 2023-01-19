@@ -11,7 +11,7 @@
         <a href="#cenik" class="nav-menu-item text-small">Ceník</a>
         <a href="#kontakt" class="nav-menu-item text-small">Kontakt</a>
     </div> -->
-    <Nav/>
+    <Nav />
     <div class="socials">
         <a href="facebook">
             <img src="/img/contact/facebook.svg" alt="facebook" />
@@ -24,7 +24,10 @@
             <img src="/img/contact/twitter.svg" alt="twitter" />
         </a>
     </div>
-    <p class="text-small">© Designed by Antónia Kenderešová | TK Design</p>
+    <div class="reference">
+        <p class="text-small">© Designed by Antónia Kenderešová | TK Design</p>
+        <p class="text-small">© Code by Jiří Janoušek | Kindwork digital</p>
+    </div>
 </footer>
 
 <style lang="scss" scoped>
@@ -64,7 +67,13 @@
             // margin-top: 0.5rem;
             color: white;
         }
+        .reference{
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
     }
+    
     @media only screen and (min-width: 1024px) {
         .footer-wrap {
             gap: 0.75rem;
